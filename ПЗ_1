@@ -1,0 +1,8 @@
+from sys import argv
+
+def salary():
+    try:
+        (time, rate, benefit) = map(float, argv[1:])
+        print(f"Salary - {time * rate + benefit}")
+    except ValueError:
+        print(f"Ваша плата = {salary()}")
